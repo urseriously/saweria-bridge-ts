@@ -1,0 +1,17 @@
+name = "saweria-bridge-ts"
+main = "src/index.ts"
+compatibility_date = "2024-03-01"
+
+[observability]
+enabled = true
+
+# database buat nyimpen donasi + leaderboard
+[[d1_databases]]
+binding = "DB"
+database_name = "saweria-db"
+database_id = "0c7e498c-d95b-4a9f-b56f-6db95500efc3"
+
+# set secrets pake command:
+# npx wrangler secret put SAWERIA_SECRET
+# npx wrangler secret put ROBLOX_UNIVERSE_ID
+# npx wrangler secret put ROBLOX_API_KEY
